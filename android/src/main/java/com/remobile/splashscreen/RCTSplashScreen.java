@@ -103,10 +103,12 @@ public class RCTSplashScreen extends ReactContextBaseJavaModule {
                 splashImageView.setImageResource(drawableId);
                 LayoutParams layoutParams = new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
                 splashImageView.setLayoutParams(layoutParams);
-                splashImageView.setMinimumHeight(display.getHeight());
-                splashImageView.setMinimumWidth(display.getWidth());
-                splashImageView.setBackgroundColor(Color.BLACK);
-                splashImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                //splashImageView.setMinimumHeight(display.getHeight());
+                //splashImageView.setMinimumWidth(display.getWidth());
+                //splashImageView.setBackgroundColor(Color.BLACK);
+                splashImageView.setBackgroundColor(0xFFF9B046);
+                //splashImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+                splashImageView.setScaleType(ImageView.ScaleType.CENTER);
 
                 // Create and show the dialog
                 splashDialog = new Dialog(context, android.R.style.Theme_Translucent_NoTitleBar);
@@ -123,3 +125,4 @@ public class RCTSplashScreen extends ReactContextBaseJavaModule {
         });
     }
 }
+
